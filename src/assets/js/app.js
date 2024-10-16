@@ -57,18 +57,6 @@ ltrBtn.addEventListener("click", () => {
   rtlBtn.classList.remove("active");
 });
 
-// grainded bg
-const grain = document.getElementById("grain");
-const grainToggleCheckbox = document.querySelector(".grained-checkbox");
-
-grainToggleCheckbox.addEventListener("change", (e) => {
-  if (e.target.checked) {
-    grain.classList.add("grain");
-  } else {
-    grain.classList.remove("grain");
-  }
-});
-
 const savedColor = localStorage.getItem("bg");
 const savedDir = localStorage.getItem("dir");
 if (savedColor) {
@@ -700,7 +688,6 @@ if (document.getElementById("about_me")) {
 import emailjs from "@emailjs/browser";
 import GLightbox from "glightbox";
 
-
 document.addEventListener("mousemove", function (event) {
   const numberOutlineOne = document.querySelectorAll(".number-outline-one");
   const numberOutlineTwo = document.querySelectorAll(".number-outline-two");
@@ -760,13 +747,11 @@ if (document.querySelector(".youtube")) {
   GLightbox({ selector: ".youtube" });
 }
 
-
 // contact form
 (function () {
-
   // add public key here
-  const PUBLIC_KEY=''
-  // https://dashboard.emailjs.com/admin/account  
+  const PUBLIC_KEY = "";
+  // https://dashboard.emailjs.com/admin/account
   emailjs.init(PUBLIC_KEY);
 })();
 const submitBtn = document.getElementById("submit-btn");
@@ -774,14 +759,13 @@ window.onload = function () {
   const contactForm = document.getElementById("contact-form");
   contactForm &&
     contactForm.addEventListener("submit", function (event) {
-    
       event.preventDefault();
 
       // add template id and service id here
 
-      const SERVICE_ID=""
-      const TEMPLATE_ID=""
-      if(!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY){
+      const SERVICE_ID = "";
+      const TEMPLATE_ID = "";
+      if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
         alert("Please add your service id and template id");
         return;
       }
