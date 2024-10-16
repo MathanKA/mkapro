@@ -1,0 +1,44 @@
+{
+  "name": "MKAPro5",
+  "version": "5.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "dev": "webpack serve",
+    "build": "webpack build --mode=production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "MathanKA",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.0",
+    "mini-css-extract-plugin": "^2.9.0",
+    "postcss-loader": "^8.1.1",
+    "prettier": "^3.3.2",
+    "sass": "^1.77.6",
+    "sass-loader": "^14.2.1",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "@popperjs/core": "^2.11.8",
+    "apexcharts": "^3.49.2",
+    "bootstrap": "^5.3.3",
+    "glightbox": "^3.3.0",
+    "grained": "^0.0.2",
+    "gsap": "^3.12.5",
+    "phosphor-icons": "^1.4.2",
+    "purgecss-webpack-plugin": "^6.0.0",
+    "shuffle-letters": "^1.1.0",
+    "split-type": "^0.3.4",
+    "swiper": "^11.1.4",
+    "typewriter-effect": "^2.21.0"
+  }
+}
