@@ -23,40 +23,6 @@ navOverlay &&
     navIcon.classList.remove("open");
   });
 
-// color switcher
-
-document.querySelector(".color-switcher-btn").addEventListener("click", () => {
-  document.querySelector(".color-switcher").classList.toggle("opened");
-});
-
-// change color
-const colorBtns = document.querySelectorAll(".color-btn");
-colorBtns.forEach((btn) =>
-  btn.addEventListener("click", () => {
-    let color = btn.getAttribute("data-color");
-    document.documentElement.style.setProperty("--primary", color);
-    localStorage.setItem("bg", color);
-  }),
-);
-
-// rtl
-const ltrBtn = document.querySelector(".ltr");
-const rtlBtn = document.querySelector(".rtl");
-
-rtlBtn.addEventListener("click", () => {
-  document.documentElement.dir = "rtl";
-  localStorage.setItem("dir", "rtl");
-  rtlBtn.classList.add("active");
-  ltrBtn.classList.remove("active");
-});
-
-ltrBtn.addEventListener("click", () => {
-  document.documentElement.dir = "ltr";
-  localStorage.setItem("dir", "ltr");
-  ltrBtn.classList.add("active");
-  rtlBtn.classList.remove("active");
-});
-
 const savedColor = localStorage.getItem("bg");
 const savedDir = localStorage.getItem("dir");
 if (savedColor) {
