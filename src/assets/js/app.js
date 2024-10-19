@@ -65,7 +65,7 @@ const serviceSwiper = new Swiper(".service-swiper", {
   modules: [Pagination, Autoplay],
   breakpoints: {
     768: {
-      slidesPerView: 2,
+      slidesPerView: 3,
       spaceBetween: 24,
     },
     1550: {
