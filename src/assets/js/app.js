@@ -5,7 +5,7 @@ import Swiper from "swiper";
 import * as bootstrap from "bootstrap";
 import { Autoplay, Navigation, Pagination, Scrollbar } from "swiper/modules";
 import ApexCharts from "apexcharts";
-import Typewriter from "typewriter-effect/dist/core";
+// import Typewriter from "typewriter-effect/dist/core";
 
 const navIcon = document.querySelector(".nav-icon");
 const nav = document.querySelector(".navigation");
@@ -41,14 +41,14 @@ if (savedDir) {
 }
 
 // typewritter effect on hero
-if (document.getElementById("typewriter")) {
-  new Typewriter("#typewriter", {
-    strings: ["Developer", "Designer"],
-    autoStart: true,
-    loop: true,
-    delay: 200,
-  });
-}
+// if (document.getElementById("typewriter")) {
+//   new Typewriter("#typewriter", {
+//     strings: ["Developer", "Designer"],
+//     autoStart: true,
+//     loop: true,
+//     delay: 200,
+//   });
+// }
 
 // service swiper
 const serviceSwiper = new Swiper(".service-swiper", {
