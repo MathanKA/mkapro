@@ -716,7 +716,7 @@ if (document.querySelector(".youtube")) {
 // contact form
 (function () {
   // add public key here
-  const PUBLIC_KEY = "";
+  const PUBLIC_KEY = "wKH-MbTQ7f_kWCz-l";
   // https://dashboard.emailjs.com/admin/account
   emailjs.init(PUBLIC_KEY);
 })();
@@ -729,8 +729,8 @@ window.onload = function () {
 
       // add template id and service id here
 
-      const SERVICE_ID = "";
-      const TEMPLATE_ID = "";
+      const SERVICE_ID = "service_xy8a1cp";
+      const TEMPLATE_ID = "template_hog2i9i";
       if (!SERVICE_ID || !TEMPLATE_ID || !PUBLIC_KEY) {
         alert("Please add your service id and template id");
         return;

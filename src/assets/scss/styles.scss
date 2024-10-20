@@ -745,9 +745,9 @@ h6 {
   @media (min-width: 1200px) {
     padding-top: 120px;
   }
-  .section-title-overlay-text {
-    top: 100px;
-  }
+  // .section-title-overlay-text {
+  //   top: 100px;
+  // }
   .experience-wrapper {
     margin-top: 30px;
     gap: 50px;
@@ -800,7 +800,8 @@ h6 {
         @include min-width(xl) {
           font-size: 20px;
         }
-        font-weight: 500;
+        font-style: italic;
+        font-weight: 400;
         margin-bottom: 4px;
       }
       h3 {
@@ -811,7 +812,7 @@ h6 {
         @include min-width(xxl) {
           font-size: 40px;
         }
-        font-weight: 600;
+        font-weight: 500;
         margin-bottom: 16px;
       }
       p {
@@ -819,6 +820,7 @@ h6 {
           font-size: 18px;
         }
         color: rgb(var(--black));
+        text-align: justify;
       }
     }
   }
@@ -836,6 +838,9 @@ h6 {
     justify-content: center;
     align-items: center;
     transition-duration: 400ms;
+    i {
+      font-size: 50px;
+    }
     &:hover {
       background-color: #000;
       color: #fff;
@@ -1177,7 +1182,7 @@ h6 {
 .contact {
   padding-top: 60px 0;
   @include min-width(xl) {
-    padding-top: 120px 0;
+    padding-top: 120px;
   }
   padding-bottom: 40px;
   .contact-item {
@@ -1207,7 +1212,7 @@ h6 {
         font-size: 1.6rem;
       }
     }
-    p {
+    a, p {
       @include min-width(lg) {
         font-size: 20px;
       }
