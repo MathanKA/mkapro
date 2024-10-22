@@ -33,8 +33,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({ template: "./src/index.html", filename: "./index.html", minify: false }),
-    new HtmlWebpackPlugin({ template: "./src/blogs.html", filename: "./blogs.html", minify: false }),
-    new HtmlWebpackPlugin({ template: "./src/blog-details.html", filename: "./blog-details.html", minify: false }),
+    // new HtmlWebpackPlugin({ template: "./src/blogs.html", filename: "./blogs.html", minify: false }),
+    // new HtmlWebpackPlugin({ template: "./src/blog-details.html", filename: "./blog-details.html", minify: false }),
     new miniCssExtractPlugin({
       filename: "assets/css/index.css",
     }),
@@ -70,12 +70,15 @@ module.exports = {
           {
             // Loads a SASS/SCSS file and compiles it to CSS
             loader: "sass-loader",
+            options: {
+              api: "modern-compiler",
+            },
           },
         ],
       },
     ],
   },
   optimization: {
-    minimize: false,
+    minimize: true,
   },
 };
