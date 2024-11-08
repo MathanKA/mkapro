@@ -30,6 +30,7 @@ module.exports = {
         runtimeErrors: true,
       },
     },
+    allowedHosts: "all",
   },
   plugins: [
     new HtmlWebpackPlugin({ template: "./src/index.html", filename: "./index.html", minify: false }),
